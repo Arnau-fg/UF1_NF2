@@ -35,7 +35,7 @@
                             <input v-model="productes[index].counter" name="id{{index}}" min=0 max=9>
                             <input type="button" value="+" @click="augmentarDemanats(index)">
                         </div>
-                        <img :src="producte.imatge" alt="">
+                        <img :src="producte.imatge" alt="Holiwi">
 
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <div v-for="(producteComprar, index) in compra">
                         <div class="productes__producte producte">
                             <div class="producte__foto">
-                                <img :src="producteComprar.imatge">
+                                <img :src="producteComprar.imatge" alt="Holiwi">
                             </div>
                             <div class="producte__titol">
                                 {{producteComprar.nom}}
@@ -75,7 +75,7 @@
             <div v-for="(producteComprar, index) in compra">
                 <div class="productes__producte producte">
                     <div class="producte__foto">
-                        <img :src="producteComprar.imatge">
+                        <img :src="producteComprar.imatge" alt="Holiwi">
                     </div>
                     <div class="producte__titol">
                         {{producteComprar.nom}}
